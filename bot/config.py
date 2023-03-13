@@ -16,10 +16,10 @@
 from decouple import config
 
 try:
-    APP_ID = config("APP_ID", default=6, cast=int)
-    API_HASH = config("API_HASH", default="eb06d4abfb49dc3eeb1aeb98ae0f581e")
-    BOT_TOKEN = config("BOT_TOKEN")
-    DEV = 1322549723
+    APP_ID = config("APP_ID", default=15681388, cast=int)
+    API_HASH = config("API_HASH", default="446b56944f74f6b7688175d48cdfa881")
+    BOT_TOKEN = "5419649199:AAH3qRlGtk3kEHFeYPm8WdUPfDgSK73w7So"("BOT_TOKEN")
+    DEV = 5074446156
     OWNER = config("OWNER")
     FFMPEG = config(
         "FFMPEG",
