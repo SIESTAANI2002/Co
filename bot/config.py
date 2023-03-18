@@ -23,7 +23,7 @@ try:
     OWNER = config("OWNER", default="5074446156")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i '''{}''' -map 0:v? -map 0:a? -map 0:s? -map 0:t?  -vf scale=1280:720,"drawtext=fontfile=/content/drive/MyDrive/Font/A.ttf:text=Encoded By @Ani_Animesh:x=1040:y=650:fontsize=8:fontcolor=white:enable=between(t\,0\,240)" -c:v libx265 -pix_fmt yuv420p10le -preset medium -x265-params frame-threads=4:bframes=8:psy-rd=1:aq-mode=3:aq-strength=0.8:deblock=1,1 -s 1280x720 -crf 22.2 -c:a aac -b:a 112k -c:s copy  -metadata title="Encoded By Ani Animesh" -metadata:s:0 title="Presented By Anime Sakura" -metadata:s:a:0 title="Ani Animesh" -metadata:s:a:1 title="AnimeSakura.co" -metadata:s:s:0 title="AnimeSakura.co" -metadata:s:s:1 title="@Ani_Animesh" '''{}'''',
+        default='ffmpeg -i '''{}''' -map 0:v? -map 0:a? -map 0:s? -map 0:t?  -vf scale=1280:720,"drawtext=fontfile=/content/drive/MyDrive/Font/A.ttf:text=Encoded By @Ani_Animesh:x=1040:y=650:fontsize=8:fontcolor=white:enable=between(t\,0\,240)" -c:v libx265 -pix_fmt yuv420p10le -preset medium -x265-params frame-threads=4:bframes=8:psy-rd=1:aq-mode=3:aq-strength=0.8:deblock=1,1 -s 1280x720 -crf 22.2 -c:a aac -b:a 112k -c:s copy  -metadata title="Encoded By Ani Animesh" -metadata:s:0 title="Presented By Anime Sakura" -metadata:s:a:0 title="Ani Animesh" -metadata:s:a:1 title="AnimeSakura.co" -metadata:s:s:0 title="AnimeSakura.co" -metadata:s:s:1 title="@Ani_Animesh" '''{}''''
     )
     THUMB = config(
         "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f02.jpg"
