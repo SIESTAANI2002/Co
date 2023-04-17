@@ -3,7 +3,8 @@ RUN mkdir /bot && chmod 777 /bot
 WORKDIR /bot
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev
-RUN wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-arm64-static.tar.xz && tar -xf ffmpeg-git-arm64-static.tar.xz && mv ffmpeg-*-static/ffmpeg /usr/local/bin/ffmpeg && rm -rf ffmpeg-*
+RUN add-apt-repository ppa:savoury1/ffmpeg4
+RUN sudo apt full-upgrade
 RUN apt -qq install -y mediainfo
 COPY . .
 RUN pip3 install -r requirements.txt
